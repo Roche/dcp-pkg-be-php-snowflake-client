@@ -1,0 +1,33 @@
+{
+  "name": "open-dcp/snowflake-client",
+  "description": "Light client to connect to Snowflake using Oauth.",
+  "version": "0.0.0-local",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Dcp\\SnowflakeClient\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "DCP Core Team",
+      "email": "info@open-dcp.ai"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "guzzlehttp/guzzle": "^7.7 || ^7.9",
+    "nesbot/carbon": "^2.67 || ^3.8",
+    "spatie/laravel-data": "^3.0 || ^4.11"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dcp\\SnowflakeClient\\SnowflakeApiServiceProvider"
+      ]
+    }
+  },
+  "support": {
+    "source": "https://github.com/Roche/dcp-pkg-be-php-snowflake-client.git"
+  }
+}
